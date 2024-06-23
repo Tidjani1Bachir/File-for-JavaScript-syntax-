@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bom Challenge</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-top: 50px;
+        }
+
+        form {
+            width: 400px;
+            height: 100px;
+            background-color: rgb(227, 227, 227);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+        }
+
+        input[type="text"] {
+            width: 280px;
+            height: 30px;
+            border-radius: 5px;
+            border: 1px solid gray;
+            margin-right:10px;
+        }
+
+        input[type="submit"] {
+            height: 36px;
+            width: 80px;
+            border-radius: 5px;
+            border: 1px solid gray;
+            background-color: rgba(245, 73, 10, 0.623);
+            color: white;
+        }
+
+        input:focus {
+            outline: none;
+        }
+        .tasks {
+            width: 400px;
+            height: 50px;
+            background-color: rgb(227, 227, 227);
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 5px;
+            margin-top:20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <form class="form" action="">
+            <input type="text" class="input" >
+            <input type="submit" class="add" value="Add Task"/>
+        </form>
+        <div class="tasks"></div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

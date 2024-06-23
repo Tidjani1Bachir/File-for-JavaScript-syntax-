@@ -1,0 +1,266 @@
+-JavaScript  
+-Client Side , sever Side  
+
+what is used for:
+ -Dynamically Update Content
+ -Manipulating html and Css
+ -Animated images and content , and Create Image Gallery
+ -Manipulate and validate Data
+ -Control Multimedia [audio, video, etc ...]
+ -Web Browser games
+ -Mobile Apps crossplatforme
+ -Desktop Apps crossplatforme
+
+think of ideas
+ 
+probleme soliving --> leet code pro .. Edabit noob ...hackerRank moyenne
+
+<------------------------------------------------------------------------------------->
+
+-We use the console in chrome devellopper tool to see the erreurs (including files that does'nt existe ) in code and to write js and see the results of js 
+-Null --> The Element Does not existe 
+-The best practise is to keep the script tag in body tag not in the head is u want to put it in the head u need to specifie that u want the js code to work after load (events) wich means the element is created 
+
+<------------------------------------------------------------------------------------->
+-we use comments to makes our code more simple to understand and also to specifie each move we do like if we can to do something in different sinarious and why we choose a specific one
+-perevent the execution 
+-if u are begginner use comments for u 
+-do not over comments you're code if u are pro
+
+<------------------------------------------------------------------------------------->
+-document is and object refers to the content of the web page
+-
+
+<------------------------------------------------------------------------------------->
+-ES6 one of the standirasation:
+
+ecma scipt organasation that puts standarisation for informations like programming languages 
+6 version
+
+ standarisation for devellopement to make languages similar to each other and to make some other  languages have features of other languages or features that does'nt existe in the language it's  self   
+
+"es6features.org" --> es6 code and legacy code 
+ 
+ -u can find things that u used to do hard but now there is easy way to do that 
+ -things useless 
+ -new features
+
+not all browsers support the standarisation ---> babel compile code new code ---> legacy
+
+when the language try to apply the standarisation it's goes to be similar to other language 
+
+<------------------------------------------------------------------------------------->
+Data Types: 
+  -console.log("Osama"); without "" it's a programming order but with it it's a string 
+  -console.log(typeof("Osama")); or console.log(typeof "Osama");
+  -console.log({ name: "Osama" , age:17 ,country: "Eg" });  -->type object key = value 
+  -undefined --> not found غير موجود 
+  -null  value empty
+
+var user= "qdfdf"; var --> is not neccessary but if u don't use it u can have override problemes if the varriable is already existes i=1 i= 2 the i value is overrides 
+
+when u create an html element with id u have a variable with the name of that id u can use it to acces to the html element with console and to change it's content with  js global variable
+
+like -->  hello.innerHTML = "Option";
+
+if u write hello in console u will see the html element with id = hello in the console
+
+loosley type language vs Strongly typed Languge:
+ 
+
+<------------------------------------------------------------------------------------->
+Data Shuffeling
+
+
+<------------------------------------------------------------------------------------->
+  undifiend error:
+
+
+In JavaScript, a function returns undefined if it does not explicitly return a value. This can happen for a few reasons:
+
+The function does not have a return statement.
+The return statement is empty.
+The return statement returns a value that is of type undefined.
+For example, the following function does not return any value:
+
+JavaScript
+function myFunction() {
+}
+Utilisez le code avec précaution. En savoir plus
+The following function returns an empty value:
+
+JavaScript
+function myFunction() {
+  return;
+}
+Utilisez le code avec précaution. En savoir plus
+The following function returns a value of type undefined:
+
+JavaScript
+function myFunction() {
+  return undefined;
+}
+Utilisez le code avec précaution. En savoir plus
+If a function returns undefined, it is essentially saying that it does not have a result. This can be a problem if you are expecting the function to return a value.
+
+To prevent a function from returning undefined, you should make sure to include a return statement that explicitly returns a value. The value that you return can be of any type, including undefined.
+
+Here is an example of a function that returns a value of type string:
+
+JavaScript
+function myFunction() {
+  return "Hello, world!";
+}
+Utilisez le code avec précaution. En savoir plus
+In this example, the return statement explicitly returns the string "Hello, world!". This means that the function will never return undefined.
+
+
+<------------------------------------------------------------------------------------->
+
+always declare element before going inside the loop
+
+
+<------------------------------------------------------------------------------------->
+
+What is Fetching Data?
+
+It's the process of retrieving data from a server or external source and displaying it within a web page or application.
+It's essential for creating dynamic and interactive web experiences, as it allows you to update content without full page reloads.
+How Does it Work in JavaScript?
+
+Fetch API: JavaScript provides the fetch() method as a modern way to make network requests.
+Promise-Based: fetch() returns a Promise, which handles asynchronous operations gracefully.
+Example:
+
+JavaScript
+fetch('https://api.example.com/data')
+  .then(response => response.json()) // Parse JSON response
+  .then(data => {
+    // Access fetched data here
+    console.log(data);
+    // Use data to update the UI
+  })
+  .catch(error => {
+    // Handle any errors
+    console.error('Error fetching data:', error);
+  });
+Utilisez le code avec précaution. En savoir plus
+Steps:
+
+Initiate Request: fetch('https://api.example.com/data') sends a request to the specified URL.
+Receive Response: The server responds with data (e.g., JSON).
+Parse Response: response.json() parses the JSON data into a JavaScript object.
+Use Data: The parsed data is available in the data variable for use in your application.
+Handle Errors: The catch() method handles any errors that occur during the fetching process.
+Key Points:
+
+Asynchronous: Fetching data is asynchronous, meaning the code continues to run while the request is being processed. Promises help manage this.
+JSON Data: Often, fetched data is in JSON format, which is easily parsed and used in JavaScript.
+Error Handling: Always include error handling to gracefully handle potential network issues or server errors.
+Additional Notes:
+
+Customizing Requests: You can customize fetch() with options like headers, method (GET, POST, etc.), and body data.
+Other Data Formats: Fetch can handle various data formats (XML, text, etc.) by using appropriate parsing methods.
+Libraries and Frameworks: Many libraries and frameworks (e.g., React, Angular) offer their own abstractions for fetching data, often built on top of fetch().
+
+
+
+<------------------------------------------------------------------------------------->
+
+Axios is a popular JavaScript library used for making HTTP requests from a web browser or Node.js. It simplifies the process of sending and receiving data over the internet. Here's a breakdown of its key features and why it's widely used:
+
+Features:
+
+Simplifies HTTP requests: Provides a clear and concise API for making GET, POST, PUT, DELETE, and other HTTP requests.
+
+Promise-based: Returns promises for easier asynchronous request handling.
+
+Cross-platform: Works in both the browser and Node.js.
+
+Interceptors: Allows for customizing requests and responses.
+
+Cancellable requests: Lets you abort ongoing requests if needed.
+
+Automatic JSON parsing: Automatically parses JSON responses.
+
+Error handling: Provides built-in error handling for common HTTP errors.
+
+Extensible: Can be extended with plugins for additional features.
+Benefits:
+
+Makes code cleaner and more concise: Axios removes the need for complex XMLHttpRequest code.
+Improved readability: Code becomes easier to understand and maintain.
+
+Reduced boilerplate: You don't need to write repetitive code for common tasks.
+
+More consistent API: Provides a unified way to handle HTTP requests across different environments.
+
+Easy to learn and use: Has a well-documented API and a large community of users.
+Use cases:
+
+Fetching data from APIs
+Sending data to a server
+Making RESTful API calls
+Uploading files
+Alternatives:
+
+Fetch API: Native browser API for making HTTP requests, but it's lower-level and requires more code.
+
+XMLHttpRequest: Built-in browser API, but it's cumbersome and less intuitive than Axios.
+Overall, Axios is a powerful and popular library that makes working with HTTP requests in JavaScript a breeze. Its ease of use, flexibility, and extensive features make it a valuable tool for developers of all skill levels.
+
+I hope this comprehensive explanation clarifies what Axios is and why it's commonly used! Feel free to ask any further questions you may have.
+
+
+<------------------------------------------------------------------------------------->
+no fucntion and calculation in json
+
+what is api 
+
+api gives me only the data that i can see 
+
+<------------------------------------------------------------------------------------->
+-JSON.parse => Convert Text Data(JSON) To Js Object
+-JSON.parse => Convert JS object To JSON
+
+Asynchronous vs Synchronous (step by step)
+
+-Asynchronous
+operations run in parallel (order in restorant):
+
+-like facebook the adds displays not waiting for something to go And When You Write a Posts. 
+
+-Single thread => takes single operation
+log(1)
+log(2)
+alert("Operation") // this alert will block log(3) From executing untill it's finished the log 3 //will be executed after that after the ned of the alert
+
+log(13)
+
+-js ins synchronous and can do Asychronous thing like doing a calculation and mean while do something else. 
+
+log(1)
+log(2)
+setTimeout(()=> log("operation"),4000); // the log 3 will not wait for setTimout to finish
+log(3)
+
+<------------------------------------------------------------------------------------->
+
+call Stack worck with LIFO (Synchronous)  
+
+the call stack detects Web Api Methodes And Leave It To The Browser To handle it meannig all the call stack execute the methodes that don't belong to web api then the methodes that belong to web Api like setTimout();
+
+Asynchronous functions are sent to the browser api.
+
+browser api act like another thread.
+
+after any fucntion like setTimout finich proccesseing the browser api send it to callback Queue
+
+event loop wait untill the call Stack to be empty after that he brings the content of callback Queue and executes it
+
+callbackQueue follows FIFO.
+
+Asynchronous code used in forms
+
+<------------------------------------------------------------------------------------->
+ 

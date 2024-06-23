@@ -1,0 +1,27 @@
+/* Start Assinements 1  */
+
+/* End Assinements 1  */
+
+/* Start Assinements 2  */
+
+// let myRequest = new XMLHttpRequest();
+// myRequest.open("GET", "assignements/JSON%20&%20API%20Assinements/articles.json");
+
+// myRequest.send();
+// console.log(myRequest);
+
+
+// myRequest.onreadystatechange = function () {
+//   if (this.readyState === 4 && this.status === 200) {
+//     // console.log(this.responseText);
+//     let jsData = JSON.parse(this.responseText);
+//     // console.log(jsData);
+//     for (let i = 0; i < jsData.length; i++) {
+//       let div = document.createElement("div");
+//       let repoName = document.createTextNode(jsData[i].full_name);
+//       div.appendChild(repoName);
+//       document.body.appendChild(div);
+//     }
+//   }
+// };
+/* End Assinements 2  */
